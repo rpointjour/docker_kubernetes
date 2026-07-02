@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
 from tensorflow.keras.preprocessing import image
@@ -9,6 +9,10 @@ import io
 app = Flask(__name__)
 
 model = MobileNetV2(weights="imagenet")
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/predict", methods=["POST"])
 def predict():

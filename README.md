@@ -16,3 +16,14 @@ docker compose up
 ```
 
 Then open `http://localhost:8088` in your browser.
+
+### First_Docker_App/
+A containerized ML inference API built with Flask and MobileNetV2. Upload any image through the web UI and get back the top 5 ImageNet predictions with confidence scores.
+
+```bash
+cd First_Docker_App
+docker build -t image-classifier .
+docker run -p 5000:5000 --name image-classifier image-classifier
+```
+
+Then open `http://localhost:5000` in your browser.
