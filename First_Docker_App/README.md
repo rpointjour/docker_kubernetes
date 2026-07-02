@@ -1,5 +1,8 @@
 # Image Classifier API
 
+<img width="1830" height="425" alt="image" src="https://github.com/user-attachments/assets/6361fbc1-1e66-49c1-80be-ec454460ea68" />
+
+
 A containerized ML inference API built with Flask and MobileNetV2. Upload any image and get back the top 5 predictions with confidence scores — all running inside a Docker container.
 
 ## Stack
@@ -34,6 +37,9 @@ docker run -p 5000:5000 --name image-classifier image-classifier
 ```
 
 Open `http://localhost:5000` in your browser, upload an image, and hit **Run Inference**.
+
+<img width="1843" height="778" alt="image" src="https://github.com/user-attachments/assets/841aaa6c-90b5-4fd3-83cf-52680b5c1fcd" />
+
 
 ## API
 
